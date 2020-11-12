@@ -8,4 +8,20 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public class PersonDao {
+    private String name="2";
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return "PersonDao{" +
+                "name='" + name + '\'' +
+                '}';
+    }
 }

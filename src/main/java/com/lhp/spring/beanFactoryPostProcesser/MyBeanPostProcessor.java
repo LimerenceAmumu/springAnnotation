@@ -1,4 +1,4 @@
-package com.lhp.spring.config;
+package com.lhp.spring.beanFactoryPostProcesser;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;

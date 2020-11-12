@@ -10,6 +10,7 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
  * @create 2019/3/16 16:37
  */
 public class LinuxConditional implements Condition {
+    @Override
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
         Environment environment = context.getEnvironment();
         final String OsName = environment.getProperty("os.name");

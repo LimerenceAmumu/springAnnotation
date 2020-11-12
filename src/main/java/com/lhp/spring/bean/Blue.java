@@ -11,14 +11,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class Blue implements InitializingBean, DisposableBean {
     public Blue(){
-        System.out.println("Blue 实例化");
+        System.out.println("Blue 构造器");
     }
 
 
+    @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println("Blue init... ");
     }
 
+    @Override
     public void destroy() throws Exception {
         System.out.println("Blue destory... ");
     }

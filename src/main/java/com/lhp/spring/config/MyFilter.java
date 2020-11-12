@@ -17,6 +17,7 @@ public class MyFilter implements TypeFilter {
     //MetadataReader:读取到的当前正在扫描到的类的信息
     //MetadataReaderFactory：可以获取到其他任何类的信息
     //匹配成功返回true
+    @Override
     public boolean match(MetadataReader metadataReader, MetadataReaderFactory metadataReaderFactory) throws IOException {
         //返回当前类的注解的信息
         AnnotationMetadata annotationMetadata = metadataReader.getAnnotationMetadata();

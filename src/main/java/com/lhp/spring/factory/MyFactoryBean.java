@@ -10,6 +10,7 @@ import org.springframework.beans.factory.FactoryBean;
  */
 public class MyFactoryBean implements FactoryBean<Love> {
 
+    @Override
     public Love getObject() throws Exception {
         //返回Love对象
         return new Love();
